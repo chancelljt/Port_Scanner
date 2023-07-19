@@ -10,7 +10,7 @@ def print_message(has_won):
         print(Lose_message)
 
 def play_game():
-    print("Rock, Paper, or Scissors: Enter your option")
+    print("Rock, Paper, or Scissors: Enter your option ")
 
     player_answer = None
     timeout_expired = False
