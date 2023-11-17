@@ -8,8 +8,8 @@ def load_threat_feed_database(file_path):
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
         return []
-    except json.JSONDecodeError as e:
-        print(f"Error: Unable to parse the data in 'C:\Users\jtcha\OneDrive\Desktop\Python\Threat-Intel\threat_intel_db.txt': {e}")
+    except json.JSONDecodeError:
+        print(f"Error: Unable to parse the data in '{file_path}'.")
         return []
 
 def generate_threat_summary(threat_db):
